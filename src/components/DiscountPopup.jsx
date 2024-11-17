@@ -13,7 +13,7 @@ const DiscountPopup = () => {
 
     // Hide popup after 10 seconds
     const hideTimeout = setTimeout(() => {
-      setIsVisible(true)
+      setIsVisible(false)
     }, 12000) // 11 seconds total (1 second delay + 20 seconds show time)
 
     // Cleanup timeouts
