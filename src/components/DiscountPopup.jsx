@@ -26,8 +26,8 @@ const DiscountPopup = () => {
   if (!isVisible) return null
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 fade-in">
-      <div className="bg-[#fafbfa] rounded-lg p-4 sm:p-6 md:p-8  mr-12 w-3/5  mb-56 md:mb-0 mt-0 md:mt-20 relative transform scale-100">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 fade-in overflow-hidden">
+      <div className="bg-[#fafbfa] rounded-lg p-4 sm:p-6 md:p-8  mr-12 w-3/5  mb-56 md:mb-0 mt-0 md:mt-20 relative transform scale-100 overflow-hidden">
         <button 
           onClick={() => setIsVisible(false)}
           className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 text-gray-500 hover:text-gray-700"
