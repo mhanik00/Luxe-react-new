@@ -13,7 +13,7 @@ const DiscountPopup = () => {
 
     // Hide popup after 10 seconds
     const hideTimeout = setTimeout(() => {
-      setIsVisible(false)
+      setIsVisible(true)
     }, 12000) // 11 seconds total (1 second delay + 20 seconds show time)
 
     // Cleanup timeouts
@@ -27,7 +27,7 @@ const DiscountPopup = () => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 fade-in">
-      <div className="bg-white rounded-lg p-4 sm:p-6 md:p-8 w-[95%] sm:w-[400px] md:w-[450px] max-w-lg mx-auto mb-56 md:mb-0 mt-0 md:mt-20 relative transform scale-100">
+      <div className="bg-[#fafbfa] rounded-lg p-4 sm:p-6 md:p-8  mr-12 w-3/5  mb-56 md:mb-0 mt-0 md:mt-20 relative transform scale-100">
         <button 
           onClick={() => setIsVisible(false)}
           className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 text-gray-500 hover:text-gray-700"
@@ -36,8 +36,8 @@ const DiscountPopup = () => {
         </button>
         
         <div className="text-center">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold playfair mb-2 sm:mb-3 md:mb-4">Special Offer!</h2>
-          <div className="bg-black text-white py-2 sm:py-2.5 md:py-3 px-3 sm:px-4 md:px-6 rounded-lg mb-2 sm:mb-3 md:mb-4">
+          <h2 className="text-xl  sm:text-2xl md:text-3xl font-bold playfair mb-2 sm:mb-3 md:mb-4">Special Offer!</h2>
+          <div className="bg-black text-white py-2 sm:py-2.5 md:py-3 px-3 sm:px-4 md:px-6 rounded-lg mb-2 sm:mb-3 md:mb-4  mx-auto">
             <span className="text-lg sm:text-xl md:text-2xl font-bold">20% OFF</span>
           </div>
           <p className="text-gray-600 mb-3 sm:mb-4 md:mb-6 text-xs sm:text-sm md:text-base">

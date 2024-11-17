@@ -1,3 +1,10 @@
+import man1 from '../images/man1.jpg'
+import man2 from '../images/man2.jpg'
+import man3 from '../images/man3.jpg'
+
+
+
+
 const TestimonialCard = ({ image, name, role, quote }) => (
   <div className="bg-gray-800 p-8 rounded-xl hover:shadow-2xl transition duration-300">
     <div className="flex items-center mb-6">
@@ -19,19 +26,19 @@ const TestimonialCard = ({ image, name, role, quote }) => (
 const Testimonials = () => {
   const testimonials = [
     {
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e',
+      image: man1,
       name: 'James Wilson',
       role: 'CEO, Tech Corp',
       quote: 'The quality of their suits is unmatched. I\'ve never felt more confident in my business meetings.'
     },
     {
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
+      image: man2,
       name: 'Michael Brown',
       role: 'Fashion Designer',
       quote: 'Their attention to detail and customer service is exceptional. A truly luxury experience.'
     },
     {
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
+      image: man3,
       name: 'David Chen',
       role: 'Executive Director',
       quote: 'LUXE has transformed my wardrobe. Their style consultation was invaluable.'
